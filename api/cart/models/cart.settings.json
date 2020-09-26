@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "carts",
+  "info": {
+    "name": "cart"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "product": {
+      "model": "products"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "count": {
+      "type": "integer",
+      "default": 1
+    }
+  }
+}
